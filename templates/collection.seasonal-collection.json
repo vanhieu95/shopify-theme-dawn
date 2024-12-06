@@ -19,9 +19,7 @@
     },
     "call-to-action": {
       "type": "call-to-action",
-      "custom_css": [
-        "h2, p {text-align: center;}"
-      ],
+      "custom_css": [],
       "settings": {
         "pre-order-title": "Pre-order now!",
         "pre-order-text": "Enter text here"
