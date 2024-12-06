@@ -1,29 +1,30 @@
 <div>
-	<h2>{{ section.settings.pre-order-title }}</h2>
-	<p>The new {{ collection.title }} is out now! {{ section.settings.pre-order-text }}</p>
-</div>										  
+  <h2 class="collection-pre-order__title">{{ section.settings['pre-order-title'] }}</h2>
+  <p class="collection-pre-order__description">
+    The new {{ collection.title }} is out now! {{ section.settings['pre-order-text'] }}
+  </p>
+</div>
 {% schema %}
 {
-"name": "Call to action",
-"settings": [
-	{
-	"id": "pre-order-title",
-	"type": "text",
-	"label": "Title",
-	"default": "Pre-order now!"
-	},
-	{
-	"id": "pre-order-text",
-	"type": "textarea",
-	"label": "Text",
-	"default": "Enter text here"
-	}
-]
-,
-"presets": [
-	{
-	"name": "Call to Action"
-	}
-]
+  "name": "Call to action",
+  "settings": [
+    {
+      "id": "pre-order-title",
+      "type": "text",
+      "label": "Title",
+      "default": "Pre-order now!"
+    },
+    {
+      "id": "pre-order-text",
+      "type": "textarea",
+      "label": "Text",
+      "default": "Enter text here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Call to Action"
+    }
+  ]
 }
 {% endschema %}

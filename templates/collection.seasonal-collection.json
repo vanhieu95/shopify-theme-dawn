@@ -19,7 +19,6 @@
     },
     "call-to-action": {
       "type": "call-to-action",
-      "custom_css": [],
       "settings": {
         "pre-order-title": "Pre-order now!",
         "pre-order-text": "Enter text here"

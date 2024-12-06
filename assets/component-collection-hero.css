@@ -37,6 +37,7 @@
 
 .collection-hero__title {
   margin: 2.5rem 0;
+  text-align: center;
 }
 
 .collection-hero__title + .collection-hero__description {
@@ -75,6 +76,11 @@
   border-radius: var(--media-radius);
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.collection-pre-order__title,
+.collection-pre-order__description {
+  text-align: center;
 }
 
 @media screen and (max-width: 749px) {
