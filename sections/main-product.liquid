@@ -210,7 +210,9 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                {%- unless block.settings.heading == 'Model Info' || !product.metafields.model.model_info.value.name.value -%}
+                {%- unless block.settings.heading == 'Model Info'
+                  and product.metafields.model.model_info.value.name.value != null
+                -%}
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                     <details id="Details-{{ block.id }}-{{ section.id }}">
                       <summary>
